@@ -1,3 +1,4 @@
+#Backend used for sending mail using nodemialer code available at(https://github.com/Kundannitp/graph-report-generator-backend)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
