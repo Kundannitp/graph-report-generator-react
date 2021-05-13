@@ -1,0 +1,142 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  word-break: break-all;
+}
+
+.head_data{
+  padding: 10px;
+  background: #b48c2e;
+  color: #fff;
+  font-size: 25px;
+}
+
+.bloc-tabs {
+  display: flex;
+}
+
+.tabs {
+
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.active-tabs {
+  background: white;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+  background: #96711b;
+}
+
+.bloc-tabs button {
+  border: none;
+}
+
+.print_btn{
+  margin-left: 10px;
+  background-color: #7c7b78;
+  color: #f1f1f1;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.share_img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.share_img:hover{
+  background-color: #7c7b78;
+  color: #f1f1f1;
+}
+
+.content-tabs {
+  flex-grow: 1;
+}
+
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.form-div .btn-sign{
+    background-color: #4CAF50;
+    width: 100%;
+    color: rgb(240, 240, 240);
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-div form {
+  border: 3px solid #f1f1f1;
+  background-color: #5187ce;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+.form-div button:hover {
+  opacity: 0.7;
+}
+
+.form-div .container {
+  padding: 25px;
+  background-color: lightblue;
+}
